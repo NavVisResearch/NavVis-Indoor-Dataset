@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bundle>
+  <georeference>
+    <proj>+proj=tmerc +ellps=WGS84 +lon_0=11.567708817421758 +lat_0=48.14895397684235</proj>
+    <angle>-1.6563174290508889</angle>
+    <z>0</z>
+  </georeference>
+  <dataset>
+    <name>2015-08-16_15.34.11</name>
+    <pose>
+      <position>
+        <x>-39.72370529174805</x>
+        <y>41.183658599853516</y>
+        <z>15.151419639587402</z>
+      </position>
+      <orientation>
+        <w>0.3131637591099081</w>
+        <x>0</x>
+        <y>0</y>
+        <z>0.9496991390106276</z>
+      </orientation>
+    </pose>
+  </dataset>
+  <dataset>
+    <name>2015-08-16_19.37.51</name>
+    <pose>
+      <position>
+        <x>0.0000036005358197144233</x>
+        <y>-0.0000016051164948294172</y>
+        <z>0</z>
+      </position>
+      <orientation>
+        <w>1</w>
+        <x>0</x>
+        <y>0</y>
+        <z>-2.5456217134234294e-9</z>
+      </orientation>
+    </pose>
+  </dataset>
+  <dataset>
+    <name>2015-11-08_14.58.22</name>
+    <pose>
+      <position>
+        <x>59.024906158447266</x>
+        <y>-135.95603942871094</y>
+        <z>10.371428489685059</z>
+      </position>
+      <orientation>
+        <w>0.9861411342318834</w>
+        <x>0</x>
+        <y>0</y>
+        <z>-0.16590863133724756</z>
+      </orientation>
+    </pose>
+  </dataset>
+</bundle>
