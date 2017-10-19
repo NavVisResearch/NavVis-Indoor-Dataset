@@ -1,12 +1,17 @@
 # NavVis Indoor Dataset
 _An extensive research dataset of geo-referenced images from large-scale indoor spaces_
 
-The NavVis Indoor Dataset comprises **TODO** 
+**Please note: this page is still work in progress**
+
+NavVis Indoor Dataset is coming soon. For now, please refer to the TUM LSI Dataset.
 
 # TUM LSI Dataset
-The TU Munich Large-Scale Indoor (TUM LSI) Dataset is introduced and used for evaluation in Walch et al. (2017).
+The TU Munich Large-Scale Indoor (TUM LSI) Dataset was introduced and used for evaluation in Walch et al. (2017).
 
-TUM LSI is a subset of NavVis Indoor Dataset that covers part of a Technical University of Munich (TUM) office building.
+TUM LSI is a subset of NavVis Indoor Dataset. It comprises 1314 images covering 5575 square-meters of an entire floor level at Technical University of Munich (TUM).
+
+# How To Get The Data
+If you would like to get access to NavVis Indoor Dataset or TUM LSI Dataset, please download the agreement to the NavVis Indoor Dataset Terms of Use and send a filled in and signed copy of it to research@navvis.com.
 
 # Data Organization
 * The dataset is organized by individual contiguous scans.
@@ -67,10 +72,10 @@ The NavVis Indoor Dataset comprises images and their extrinsic poses.
 - Image resolution: 3448 x 4592 pixels
 
 ### Poses
-Poses are specified by way of a transformation tree. The root of the tree is a global geo-reference in WGS84 coordinates. The root spans a metric coordinate system in which the individual scan coordinate systems are specified by way of a relative translation and rotation transofrmation. Each scan, in turn, spans its own coordinate system in which the corresponding image poses are specified.
+Poses are specified by way of a transformation tree. The root of the tree is a global geo-reference in WGS84 coordinates. The root spans a metric coordinate system in which the individual scan coordinate systems are specified by way of a relative translation and rotation transofrmation. Each scan, in turn, spans its own coordinate system in which the corresponding image poses are given.
 
 - File format: xml
-- Global geo-reference: WGS84 (latitude; longitude; height above ground)
+- Global geo-reference: WGS84
 - Poses: 6 degrees of freedom
   - 3D translation: 3x1 vector
   - 3D rotation: 4x1 quaternion
@@ -95,6 +100,9 @@ If you use the NavVis Indoor Dataset or the TUM LSI Dataset, please cite:
 
 # Changelog
 
+
 # License
 
+
 # Support
+If you need help with anything please contact us via research@navvis.com
