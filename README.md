@@ -1,14 +1,20 @@
 # NavVis Indoor Dataset
 _An extensive collection of geo-referenced images from large-scale indoor spaces_
 
-NavVis Indoor Dataset comprises 60,000 high-resolution images (still images not video frames), densely covering more than 50,000 square-meters of twelve different buildings at Technical University of Munich (TUM), Germany. The images have been taken between August 2015 and march 2016. The complete dataset exhibits a large variety of indoor scenes (focusing on corridors) including a number of architectural styles as well as capture conditions (e.g. scene illumination).
+* 60,000 high-resolution images (still images not video frames)
+* Covering more than 50,000 m2 of twelve different buildings at Technical University of Munich
+* Extrinsic poses for all images in a geo-referenced coordinate system
+* Recorded between August 2015 and March 2016
+* Large variety of indoor scenes ranging from different architectural styles to varying capture conditions (e.g. scene illumination)
 
 ## TUM LSI Dataset
-The TU Munich Large-Scale Indoor (TUM LSI) Dataset was introduced and used for evaluation in Walch et al. (2017).
+The TU Munich Large-Scale Indoor (TUM LSI) Dataset was introduced and used for evaluation in [Walch et al. (2017)](https://github.com/NavVisResearch/NavVis-Indoor-Dataset#citation).
 
-Introducing LSTMs for structured feature correlation, Walch et al. use TUM LSI data in order to demonstrate that deep learning approaches for images-based indoor positioning can perform on par with traditional local-feature-based methods.
+#### Deep learning for image-based indoor localization
+Introducing LSTMs for structured feature correlation, Walch et al. use TUM LSI data in order to train and evaluate deep learning approaches for image-based indoor localization. Their results demonstrate performance on par with or even outperforming traditional local-feature-based methods.
 
-TUM LSI is a subset of NavVis Indoor Dataset. It comprises 1314 high-resolution images, covering 5575 square-meters of one entire floor level at Technical University of Munich (TUM).
+#### TUM LSI Data
+TUM LSI is a subset of NavVis Indoor Dataset. It comprises 1314 high-resolution images, covering 5575 square-meters of one entire floor level at Technical University of Munich.
 
 * Within NavVis Indoor Dataset, the scan ID for TUM LSI Dataset is `2015-08-16_15.34.11`.
 * Please note that Walch et al. used only cameras `cam0` through `cam4` (i.e. skipping the upwards-facing camera at each capture location), resulting in a total of 1095 images used for evaluation.
@@ -56,7 +62,8 @@ images
 ...
 
 poses
-|-- geo-refrence.xml // Geo-reference of root node and coordinate transformation for all indiviual scan coordinate systems
+|-- geo-refrence.xml // Geo-reference of root node and 
+|                    // coordinate transformations to indiviual scan coordinate systems
 |
 |-- <scan_timestamp>_poses.xml // Pose coordinates of all images in the scan with name <scan_timestamp>
 |-- <scan_timestamp>_poses.xml
@@ -65,18 +72,21 @@ poses
 ```
 
 ## Data Formats
-The NavVis Indoor Dataset comprises images and their correpsonding extrinsic poses given w.r.t. a geo-referenced coordinate system.
+NavVis Indoor Dataset comprises images and correpsonding extrinsic poses given in a geo-referenced coordinate system.
 
-### Images
+#### Images
 - File format: jpeg
-- Image resolution: 3448 x 4592 pixels
+- Image size: 3448 × 4592 pixels
+- Image orientation: see Exif
+- Image DPI: 180 pixels/inch
+- Color space: sRGB
 
-### Poses
-Poses are specified by way of a transformation tree. The root of the tree is a global geo-reference in WGS84 coordinates. The root spans a metric coordinate system in which the individual scan coordinate systems are specified by way of a relative translation and rotation transofrmation. Each scan, in turn, spans its own coordinate system in which the corresponding image poses are given.
+#### Poses
+Poses are specified by way of a transformation tree. The root of the tree is a global geo-reference in WGS84 coordinates. The root spans a metric coordinate system in which the individual scan coordinate systems are specified by way of a relative translation and rotation transofrmation. Each scan, in turn, spans its own coordinate system in which corresponding image poses are given.
 
 - File format: xml
 - Global geo-reference (root node): WGS84
-  - Longitude, latitude, height above ground, 1D rotation
+  - Longitude, latitude, height above ground, 1D rotation (yaw angle)
 - Scan coordinate systems:
   - 6DoF transformation w.r.t. root node
   - 3D translation: 3x1 vector (x,y,z)
@@ -88,7 +98,7 @@ Poses are specified by way of a transformation tree. The root of the tree is a g
   - 3D rotation: 4x1 quaternion (w,x,y,z)
 
 ## Citation
-If you use the NavVis Indoor Dataset or the TUM LSI Dataset, please cite:
+If you use NavVis Indoor Dataset or TUM LSI Dataset, please cite:
 ```
 @InProceedings{walch17spatiallstms,
  author = "Florian Walch and
