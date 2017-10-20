@@ -2,7 +2,7 @@
 _An extensive collection of geo-referenced images from large-scale indoor spaces_
 
 * 60,000 high-resolution images (still images not video frames).
-* Covering more than 50,000 m^2 of 12 different buildings at Technical University of Munich.
+* Covering more than 50,000 m<sup>2</sup> of 12 different buildings at Technical University of Munich.
 * Extrinsic poses for all images in a geo-referenced coordinate system.
 * Recorded between August 2015 and March 2016.
 * Large variety of indoor scenes characteristics ranging from different architectural styles to varying capture conditions (e.g. scene illumination).
@@ -14,7 +14,7 @@ The TU Munich Large-Scale Indoor(TUM LSI) Dataset was introduced and used for ev
 Introducing LSTMs for structured feature correlation, Walch et al. use TUM LSI data in order to train and evaluate deep learning approaches for image-based indoor localization. Their results demonstrate performance on par with, or even outperforming, traditional local-feature-based methods.
 
 #### TUM LSI Data
-TUM LSI is a subset of NavVis Indoor Dataset. It comprises 1314 high-resolution images, covering 5575 m^2 of one entire floor level at Technical University of Munich.
+TUM LSI is a subset of NavVis Indoor Dataset. It comprises 1314 high-resolution images, covering 5575 m<sup>2</sup> of one entire floor level at Technical University of Munich.
 
 * Within NavVis Indoor Dataset, the scan ID for TUM LSI Dataset is `2015-08-16_15.34.11`.
 * Please note that Walch et al. used only cameras `cam0` through `cam4` (i.e. skipping the upwards-facing camera at each capture location), resulting in a total of 1095 images used for evaluation.
