@@ -1,7 +1,7 @@
 # NavVis Indoor Dataset
 _An extensive collection of geo-referenced images from large-scale indoor spaces_
 
-* 60,000 high-resolution images (still images, not video frames)
+* More than 50,000 high-resolution images (still images, not video frames)
 * Covering more than 50,000 m<sup>2</sup> of 12 different buildings at Technical University of Munich
 * Extrinsic poses for all images in a geo-referenced coordinate system
 * Recorded between August 2015 and March 2016
@@ -14,13 +14,13 @@ The TU Munich Large-Scale Indoor (TUM LSI) Dataset was introduced and used for e
 Introducing LSTMs for structured feature correlation, Walch et al. use TUM LSI data in order to train and evaluate deep learning approaches for image-based indoor localization. Their results are on par with, or even outperform, traditional local-feature-based methods.
 
 #### TUM LSI Data
-TUM LSI is a subset of NavVis Indoor Dataset. It comprises 1314 high-resolution images, covering 5575 m<sup>2</sup> of one entire floor of a Technical University of Munich office building.
+TUM LSI is a subset of NavVis Indoor Dataset. It comprises 1,314 high-resolution images, covering 5,575 m<sup>2</sup> of one entire floor of a Technical University of Munich office building.
 
 * Within NavVis Indoor Dataset, the scan ID for TUM LSI Dataset is `2015-08-16_15.34.11`.
-* Please note that Walch et al. used only cameras `cam0` through `cam4` (i.e. skipping the upwards-facing camera at each capture location), resulting in a total of 1095 images used for evaluation.
+* Please note that Walch et al. used only cameras `cam0` through `cam4` (i.e. skipping the upwards-facing camera at each capture location), resulting in a total of 1,095 images used for evaluation.
 
 ## How To Get The Images
-If you would like to receive access to NavVis Indoor Dataset images or TUM LSI Dataset images, please download the NavVis Indoor Dataset Terms of Use and send a filled out and signed copy to research@navvis.com.
+If you would like to receive access to NavVis Indoor Dataset images or TUM LSI Dataset images, please contact us at research@navvis.com.
 
 ## Data Organization
 * The dataset is organized by individual contiguous scans.
