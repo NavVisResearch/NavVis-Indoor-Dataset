@@ -1,4 +1,16 @@
-# NavVis Indoor Dataset
+# TUM LSI Dataset
+The TU Munich Large-Scale Indoor (TUM LSI) Dataset was introduced and used for evaluation in [Walch et al. (2017)](https://github.com/NavVisResearch/NavVis-Indoor-Dataset#citation) for image-based localization.
+
+#### Deep learning for image-based indoor localization
+Introducing LSTMs for structured feature correlation, Walch et al. use TUM LSI data in order to train and evaluate deep learning approaches for image-based indoor localization. Their results show that learning-based approaches are on par with, or even outperform, traditional local-feature-based methods.
+
+#### TUM LSI Data
+TUM LSI is a subset of NavVis Indoor Dataset (see below). It comprises 1,314 high-resolution images, covering 5,575 m<sup>2</sup> of one entire floor of a university building.
+
+* Within NavVis Indoor Dataset, the scan ID for TUM LSI Dataset is `2015-08-16_15.34.11`.
+* Please note that Walch et al. used only cameras `cam0` through `cam4` (i.e. skipping the upwards-facing camera at each capture location), resulting in a total of 1,095 images used for evaluation in the paper.
+
+# NavVis Indoor Dataset (setup in progress)
 _An extensive collection of geo-referenced images from large-scale indoor spaces_
 
 * More than 50,000 high-resolution images (still images, not video frames)
@@ -6,18 +18,6 @@ _An extensive collection of geo-referenced images from large-scale indoor spaces
 * Extrinsic poses for all images in a geo-referenced coordinate system
 * Recorded between August 2015 and March 2016
 * Large variety of indoor spaces (e.g. architectural styles and lighting conditions)
-
-## TUM LSI Dataset
-The TU Munich Large-Scale Indoor (TUM LSI) Dataset was introduced and used for evaluation in [Walch et al. (2017)](https://github.com/NavVisResearch/NavVis-Indoor-Dataset#citation).
-
-#### Deep learning for image-based indoor localization
-Introducing LSTMs for structured feature correlation, Walch et al. use TUM LSI data in order to train and evaluate deep learning approaches for image-based indoor localization. Their results are on par with, or even outperform, traditional local-feature-based methods.
-
-#### TUM LSI Data
-TUM LSI is a subset of NavVis Indoor Dataset. It comprises 1,314 high-resolution images, covering 5,575 m<sup>2</sup> of one entire floor of a Technical University of Munich office building.
-
-* Within NavVis Indoor Dataset, the scan ID for TUM LSI Dataset is `2015-08-16_15.34.11`.
-* Please note that Walch et al. used only cameras `cam0` through `cam4` (i.e. skipping the upwards-facing camera at each capture location), resulting in a total of 1,095 images used for evaluation.
 
 ## How To Get The Images
 If you would like to receive access to NavVis Indoor Dataset images or TUM LSI Dataset images, please contact us at research@navvis.com.
@@ -61,9 +61,10 @@ images
 |-- <scan_timestamp>
 ...
 
-poses
-|-- geo-refrence.xml // Geo-reference of root node and 
+|-- geo-refrence.xml // Global geo-reference of root node and 
 |                    // coordinate transformations to indiviual scan coordinate systems
+|
+poses
 |
 |-- <scan_timestamp>_poses.xml // Pose coordinates of all images in the scan with name <scan_timestamp>
 |-- <scan_timestamp>_poses.xml
