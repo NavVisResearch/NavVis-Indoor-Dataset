@@ -80,10 +80,7 @@ NavVis Indoor Dataset is comprised of images and correpsonding extrinsic poses.
 - Image size: 4592 × 3448 pixels
 
 #### Poses
-Poses are specified by way of a transformation tree: 
-- The root of the tree is a global geo-reference in WGS84 coordinates.
-- The root spans a metric coordinate system in which the individual scan coordinate systems are specified.
-- Each scan, in turn, spans its own coordinate system, in which corresponding image poses are given.
+Poses are specified by way of a transformation tree: The root of the tree is a global geo-reference in WGS84 coordinates. The root spans a metric coordinate system in which the individual scan coordinate systems are specified. Each scan, in turn, spans its own coordinate system, in which corresponding image poses are given.
 
 - File format: xml
 - Global geo-reference (root node): WGS84
