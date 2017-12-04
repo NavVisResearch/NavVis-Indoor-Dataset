@@ -20,7 +20,7 @@ _An extensive collection of geo-referenced images from large-scale indoor spaces
 * Large variety of indoor spaces (e.g. architectural styles and lighting conditions)
 
 ## How To Get The Images
-If you would like to receive access to NavVis Indoor Dataset images or TUM LSI Dataset images, please contact us at research@navvis.com.
+If you would like to receive access to NavVis Indoor Dataset or TUM LSI Dataset images, please fill out and submit this [form](https://navvis.typeform.com/to/fw2hl2) in which you agree to the [NavVis Indoor Dataset End-User License Agreement](http://www.navvis.com/uploads/docs/EULA_Dataset_EN.pdf).
 
 ## Data Organization
 * The dataset is organized by individual contiguous scans.
@@ -73,14 +73,14 @@ poses
 ```
 
 ## Data Formats
-NavVis Indoor Dataset is comprised of images and correpsonding extrinsic poses.
+NavVis Indoor Dataset is comprised of images and corresponding extrinsic poses.
 
 #### Images
 - File format: jpeg
 - Image size: 4592 × 3448 pixels
 
 #### Poses
-Poses are specified by way of a transformation tree: The root of the tree is a global geo-reference in WGS84 coordinates. The root spans a metric coordinate system in which the individual scan coordinate systems are specified. Each scan, in turn, spans its own coordinate system, in which corresponding image poses are given.
+Poses are specified by way of a transformation tree: The root of the tree is a global geo-reference in WGS84 coordinates. The root spans a local metric coordinate system in which the individual scan coordinate systems are specified. Each scan, in turn, spans its own coordinate system, in which corresponding image poses are given.
 
 - File format: xml
 - Global geo-reference (root node): WGS84
@@ -117,7 +117,7 @@ If you use NavVis Indoor Dataset or TUM LSI Dataset, please cite:
 
 
 ## License
-
+NavVis Indoor Dataset and TUM LSI Dataset are provided under the [NavVis Indoor Dataset End-User License Agreement](http://www.navvis.com/uploads/docs/EULA_Dataset_EN.pdf).
 
 ## Support
 If you need help with anything, please contact us at research@navvis.com
