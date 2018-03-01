@@ -9,6 +9,8 @@ TUM LSI is a subset of NavVis Indoor Dataset (see below). It comprises 1,314 hig
 
 * Within NavVis Indoor Dataset, the scan ID for TUM LSI Dataset is `2015-08-16_15.34.11`.
 * Please note that Walch et al. used only cameras `cam0` through `cam4` (i.e. skipping the upwards-facing camera at each capture location), resulting in a total of 1,095 images used for evaluation in the paper.
+* The partitioning into training and test sets as used by Walch et al. can be found in the files `tum-lsi_train.txt` and `tum-lsi_test.txt`.
+
 
 # NavVis Indoor Dataset (setup in progress)
 _An extensive collection of geo-referenced images from large-scale indoor spaces_
