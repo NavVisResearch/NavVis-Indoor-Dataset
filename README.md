@@ -10,6 +10,9 @@ TUM LSI is a subset of NavVis Indoor Dataset (see below). It comprises 1,314 hig
 * Within NavVis Indoor Dataset, the scan ID for TUM LSI Dataset is `2015-08-16_15.34.11`.
 * Please note that Walch et al. used only cameras `cam0` through `cam4` (i.e. skipping the upwards-facing camera at each capture location), resulting in a total of 1,095 images used for evaluation in the paper.
 * The partitioning into training and test sets as used by Walch et al. can be found in the files `tum-lsi_train.txt` and `tum-lsi_test.txt`.
+* Note that images are stored in portrait format and were not rotated. For preparing the images, Walch et al. followed [1, section 3.2] and first rescaled horizontally to 256 pixels, then performed random crops to 224x224.
+
+[1] A. Kendall, M. Grimes, and R. Cipolla. Posenet: A convolutional network for real-time 6-dof camera relocalization. In IEEE International Conference on Computer Vision (ICCV), 2015
 
 
 # NavVis Indoor Dataset (setup in progress)
