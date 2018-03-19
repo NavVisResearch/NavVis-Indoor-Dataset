@@ -85,7 +85,7 @@ NavVis Indoor Dataset is comprised of images and corresponding extrinsic poses.
 - Image size: 4592 × 3448 pixels
 
 #### Poses
-Poses are specified by way of a transformation tree: The root of the tree is a global geo-reference in WGS84 coordinates. The root spans a local metric coordinate system in which the individual scan coordinate systems are specified. Each scan, in turn, spans its own coordinate system, in which corresponding image poses are given.
+Poses are specified by way of a transformation tree: The root of the tree is a global geo-reference in WGS84 coordinates. The root spans a local metric coordinate system in which the various scan coordinate systems are specified. Each scan, in turn, spans its own coordinate system, in which corresponding image poses are given.
 
 - File format: xml
 - Global geo-reference (root node): WGS84
@@ -97,8 +97,8 @@ Poses are specified by way of a transformation tree: The root of the tree is a g
 - Image poses:
   - 6DoF transformation w.r.t. scan coordinate system
   - Extrinsic parameters only
-  - 3D translation: 3x1 vector (x,y,z)
-  - 3D rotation: 4x1 quaternion (w,x,y,z)
+  - 3D translation specifying the image position in its dataset frame: 3x1 vector (x,y,z)
+  - 3D rotation specifying the image orientation in its dataset frame: 4x1 quaternion (w,x,y,z)
 
 ## Citation
 If you use NavVis Indoor Dataset or TUM LSI Dataset, please cite:
