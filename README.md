@@ -25,7 +25,7 @@ _An extensive collection of geo-referenced images from large-scale indoor spaces
 * Large variety of indoor spaces (e.g. architectural styles and lighting conditions)
 
 ## How To Get The Images
-If you would like to receive access to NavVis Indoor Dataset or TUM LSI Dataset images, please fill out and submit this [form](https://navvis.typeform.com/to/fw2hl2) in which you agree to the [NavVis Indoor Dataset End-User License Agreement](http://www.navvis.com/uploads/docs/EULA_Dataset_EN.pdf).
+If you would like to receive access to NavVis Indoor Dataset or TUM LSI Dataset images, please fill out and submit this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=CSDLYH24P02GUqS9O9H4ZDDJ0Rkk_VBEhj8bcLfAkNdURjJaTU9MVlZJSk1PODgxQU5IQVJBUkFUSS4u) in which you agree to the [NavVis Indoor Dataset End-User License Agreement](http://www.navvis.com/uploads/docs/EULA_Dataset_EN.pdf).
 
 ## Data Organization
 * The dataset is organized by individual contiguous scans.
